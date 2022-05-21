@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - 13000:3000
+    volumes:
+      - ./:/app/dev-container-sample
+    working_dir: /app/dev-container-sample
+    container_name: dev-container-sample
